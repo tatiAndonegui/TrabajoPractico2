@@ -1,14 +1,31 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class EtapaMundial {
     private String descripcionEtapa;
     private ArrayList <Partido> partidos;
 
+//constructor
+ public EtapaMundial(){};
+
+ //getters y setters
+
+   public void addPartido(Partido partido){
+       this.partidos.add(partido);
+   }
+
     public String getDescripcionEtapa() {
         return descripcionEtapa;
     }
 
+
+
     protected ArrayList <Partido> getPartidos(){
         return partidos;
+    }
+
+    public ArrayList <Equipo> getEquiposQueAvanzan (){
+        return null;
+        //CREAR LOGICA
     }
 }

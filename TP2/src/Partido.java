@@ -13,6 +13,7 @@ public class Partido {
     this.visitante=visitante;
     this.resultado=resultado;}
 
+    //getters y setters
     public Resultado getResultado() {
         return resultado;
     }
@@ -25,5 +26,7 @@ public class Partido {
         return visitante;
     }
 
+    public void setEquipo(EtapaMundial etapaMundial) {
+    }
 }
 
