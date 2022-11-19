@@ -1,0 +1,11 @@
+@startuml
+class EtapaMundial {
+- String descripcionEtapa
+- ArrayList<Partido> partidos
++ <<Create>> EtapaMundial()
++ void addPartido(Partido)
++ String getDescripcionEtapa()
+# ArrayList<Partido> getPartidos()
++ ArrayList<Equipo> getEquiposQueAvanzan()
+}
+@enduml

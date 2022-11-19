@@ -1,0 +1,9 @@
+@startuml
+class Resultado {
+- int golesLocales
+- int golesVisitante
++ int getGolesLocales()
++ int getGolesVisitante()
++ boolean ganoLocal()
+}
+@enduml

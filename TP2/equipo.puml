@@ -1,0 +1,8 @@
+@startuml
+class Equipo {
+- String nombre
+- ArrayList<Partido> partidosJugados
++ String getNombre()
++ void setNombre(String)
+}
+@enduml

@@ -10,15 +10,13 @@ public class EtapaMundial {
 
  //getters y setters
 
-   public void addPartido(Partido partido){
-       this.partidos.add(partido);
-   }
-
     public String getDescripcionEtapa() {
         return descripcionEtapa;
     }
 
-
+    public void addPartido(Partido partido){
+        this.partidos.add(partido);
+    }
 
     protected ArrayList <Partido> getPartidos(){
         return partidos;
