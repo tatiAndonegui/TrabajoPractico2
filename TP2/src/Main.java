@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Main {
@@ -121,6 +122,28 @@ public class Main {
         grupoH.addPartido(new Partido(new Date(), corea_del_sur,ghana,new Resultado()));
         grupoH.addPartido(new Partido(new Date(), corea_del_sur,portugal,new Resultado()));
         grupoH.addPartido(new Partido(new Date(), ghana,uruguay,new Resultado()));
+
+        ArrayList<Equipo> mejoresGrupoA = grupoA.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoB = grupoB.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoC = grupoC.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoD = grupoD.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoE = grupoE.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoF = grupoF.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoG = grupoG.getEquiposQueAvanzan();
+        ArrayList<Equipo> mejoresGrupoH = grupoH.getEquiposQueAvanzan();
+
+        EtapaMundial octavosFinal = new Llave();
+        octavosFinal.setDescripcionEtapa("octavos de final");
+        // MEJORES POSICION 0 , SEGUNDOS MEJORES POSICION 1
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoA.get(0),mejoresGrupoB.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoC.get(0),mejoresGrupoD.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoE.get(0),mejoresGrupoF.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoG.get(0),mejoresGrupoH.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoB.get(0),mejoresGrupoA.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoD.get(0),mejoresGrupoC.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoF.get(0),mejoresGrupoE.get(1),new Resultado()));
+        octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoH.get(0),mejoresGrupoG.get(1),new Resultado()));
+
     }
 
 
