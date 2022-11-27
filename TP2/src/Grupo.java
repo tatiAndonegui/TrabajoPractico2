@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Grupo {
+public class Grupo extends EtapaMundial {
 
     public ArrayList<Equipo> getEquiposQueAvanzan () {
         return null;

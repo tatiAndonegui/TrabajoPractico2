@@ -14,6 +14,10 @@ public class EtapaMundial {
         return descripcionEtapa;
     }
 
+    public void setDescripcionEtapa(String descripcionEtapa) {
+        this.descripcionEtapa = descripcionEtapa;
+    }
+
     public void addPartido(Partido partido){
         this.partidos.add(partido);
     }
@@ -26,4 +30,5 @@ public class EtapaMundial {
         return null;
         //CREAR LOGICA
     }
+
 }
