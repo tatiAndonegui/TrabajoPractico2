@@ -6,7 +6,9 @@ public class EtapaMundial {
     private ArrayList <Partido> partidos;
 
 //constructor
- public EtapaMundial(){};
+ public EtapaMundial(){
+     this.partidos= new ArrayList<Partido>();
+ };
 
  //getters y setters
 

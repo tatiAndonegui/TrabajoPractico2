@@ -9,8 +9,8 @@ public class Resultado {
     }
 
     public Resultado (){
-        this.golesLocales= (int) Math.random()*5;
-        this.golesVisitante=(int) Math.random()*5;
+        this.golesLocales= (int) (Math.random()*5);
+        this.golesVisitante=(int) (Math.random()*5);
     }
 
     public int getGolesLocales() {
