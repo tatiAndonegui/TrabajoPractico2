@@ -1,0 +1,56 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+class Mundial.Llave {
++ ArrayList<Equipo> getEquiposQueAvanzan()
+}
+class Mundial.Partido {
+- Date fecha
+- Equipo local
+- Equipo visitante
+- Resultado resultado
++ <<Create>> Partido(Date,Equipo,Equipo,Resultado)
++ Resultado getResultado()
++ Equipo getLocal()
++ Equipo getVisitante()
++ void setEquipo(EtapaMundial)
+}
+class Mundial.Grupo {
++ ArrayList<Equipo> getEquiposQueAvanzan()
+}
+class Mundial.Resultado {
+- int golesLocales
+- int golesVisitante
++ <<Create>> Resultado(int,int)
++ <<Create>> Resultado()
++ int getGolesLocales()
++ int getGolesVisitante()
++ boolean ganoLocal()
++ boolean empate()
+}
+class Mundial.Equipo {
+- String nombre
+- ArrayList<Partido> partidosJugados
+- int puntaje
++ <<Create>> Equipo(String)
++ String getNombre()
++ void setNombre(String)
++ int getPuntaje()
++ void setPuntaje(int)
+}
+class Mundial.EtapaMundial {
+- String descripcionEtapa
+- ArrayList<Partido> partidos
++ <<Create>> EtapaMundial()
++ String getDescripcionEtapa()
++ void setDescripcionEtapa(String)
++ void addPartido(Partido)
+# ArrayList<Partido> getPartidos()
++ ArrayList<Equipo> getEquiposQueAvanzan()
+}
+
+
+Mundial.EtapaMundial <|-- Mundial.Llave
+Mundial.EtapaMundial <|-- Mundial.Grupo
+@enduml

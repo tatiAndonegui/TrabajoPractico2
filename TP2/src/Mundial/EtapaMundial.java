@@ -1,5 +1,8 @@
+package Mundial;
+
+import Mundial.Equipo;
+
 import java.util.ArrayList;
-import java.util.Date;
 
 public class EtapaMundial {
     private String descripcionEtapa;

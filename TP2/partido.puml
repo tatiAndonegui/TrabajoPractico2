@@ -1,13 +1,13 @@
 @startuml
-class Partido {
+class Mundial.Partido {
 - Date fecha
-- Equipo local
-- Equipo visitante
-- Resultado resultado
-+ <<Create>> Partido(Date,Equipo,Equipo,Resultado)
-+ Resultado getResultado()
-+ Equipo getLocal()
-+ Equipo getVisitante()
-+ void setEquipo(EtapaMundial)
+- Mundial.Equipo local
+- Mundial.Equipo visitante
+- Mundial.Resultado resultado
++ <<Create>> Mundial.Partido(Date,Mundial.Equipo,Mundial.Equipo,Mundial.Resultado)
++ Mundial.Resultado getResultado()
++ Mundial.Equipo getLocal()
++ Mundial.Equipo getVisitante()
++ void setEquipo(Mundial.EtapaMundial)
 }
 @enduml

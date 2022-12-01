@@ -1,7 +1,7 @@
 @startuml
-class Equipo {
+class Mundial.Equipo {
 - String nombre
-- ArrayList<Partido> partidosJugados
+- ArrayList<Mundial.Partido> partidosJugados
 + String getNombre()
 + void setNombre(String)
 }

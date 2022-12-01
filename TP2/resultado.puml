@@ -1,5 +1,5 @@
 @startuml
-class Resultado {
+class Mundial.Resultado {
 - int golesLocales
 - int golesVisitante
 + int getGolesLocales()

@@ -1,3 +1,5 @@
+import Mundial.*;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -146,7 +148,7 @@ public class Main {
         octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoF.get(0),mejoresGrupoE.get(1),new Resultado()));
         octavosFinal.addPartido(new Partido(new Date(),mejoresGrupoH.get(0),mejoresGrupoG.get(1),new Resultado()));
 
-        System.out.println("Los equipos que pasan a octavos de final son: ");
+        System.out.println("\n Los equipos que pasan a octavos de final son: \n ");
         for (int i=0 ; i<mejoresGrupoA.size() ; i++){
             System.out.println(mejoresGrupoA.get(i).getNombre());
         }
@@ -184,7 +186,7 @@ public class Main {
         cuartosFinal.setDescripcionEtapa("cuartos de final");
         ArrayList<Equipo> mejoresOctavos = octavosFinal.getEquiposQueAvanzan();
 
-        System.out.println("Los equipos que pasan a cuartos de final son: ");
+        System.out.println("\n Los equipos que pasan a cuartos de final son: \n ");
         for (int i=0 ; i<mejoresOctavos.size() ; i++){
             System.out.println(mejoresOctavos.get(i).getNombre());
         }
@@ -197,7 +199,7 @@ public class Main {
         //SEMI FINAL
         ArrayList<Equipo> mejoresCuartos = cuartosFinal.getEquiposQueAvanzan();
 
-        System.out.println("Los equipos que pasan a semi final son: ");
+        System.out.println("\nLos equipos que pasan a semi final son: \n ");
 
         for (int i=0 ; i<mejoresCuartos.size() ; i++){
             System.out.println(mejoresCuartos.get(i).getNombre());
@@ -212,7 +214,7 @@ public class Main {
         // FINAL
         ArrayList<Equipo> mejoresSemifinal = semiFinal.getEquiposQueAvanzan();
 
-        System.out.println("Los equipos que pasan a la final son: ");
+        System.out.println("\n Los equipos que pasan a la final son: ");
 
         for (int i=0 ; i<mejoresSemifinal.size() ; i++){
             System.out.println(mejoresSemifinal.get(i).getNombre());
@@ -225,7 +227,7 @@ public class Main {
 
         // Ganador del mundial
         ArrayList<Equipo> ganador = partidoFinal.getEquiposQueAvanzan();
-        System.out.println("El ganador del mundial es " + ganador.get(0).getNombre());
+        System.out.println("\n El ganador del mundial es " + ganador.get(0).getNombre());
 
     }
 
